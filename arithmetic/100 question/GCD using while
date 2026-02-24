@@ -1,0 +1,13 @@
+# Read two numbers from the user
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+while b != 0:
+    a, b = b, a % b
+
+print("GCD:", a)
+
+#Output
+#Enter the first number: 3
+#Enter the second number: 4
+#GCD: 1
